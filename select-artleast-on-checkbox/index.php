@@ -15,22 +15,19 @@
 	<input type='submit' name="submit" value='submit' onclick="return valuealidate();" />
 	</form>
 
-	
+
 	<script type="text/javascript">
 		function valuealidate() {
-
 		    var count_checked = $("[name='roles[]']:checked").length; 
 		    if (count_checked == 0) {
-		        alert("Please check at least one checkbox");
-		        return false;
-		    }else{
-				alert('ok'); 
-				return true;
-			}
-			//alert('hi');
+			alert("Please check at least one checkbox");
+			return false;
+		    } else {
+			alert('ok'); 
+			return true;
+		    }
+		//alert('hi');
 		}
-		  
-		
 	</script>
 </body>
 </html>
